@@ -14,10 +14,11 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    
    <div class="container"> <div style="text-align: center;">
         <h1 style="font-weight: 700; font-size: 36px; font-style: italic;">Videos</h1>
         <hr style="color: #000000" />
-        <p style="font-weight: 700; font-size: 24px;">Some of the videos.</p>
+        <p style="font-weight: 700; font-size: 24px;">Some of the videos of our work and our products.</p>
     </div>
 
     <table style="margin: 0 auto;">
