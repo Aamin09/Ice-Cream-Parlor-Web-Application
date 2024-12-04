@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>My Ice Cream</title>
+    <link href="css/master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    
+</head>
+    
+<body style="width: auto; height: auto; top: auto; right: auto; bottom: auto; left: auto; position: absolute; z-index: auto">
+    <form id="form1" runat="server" style="color: #000000; background-color: #FFFFFF; " class="auto-style7">
+         <header>
+             <br />
+             <div style="font-size: 18px; color: #000000;"> 
+            <asp:Image ID="Image5" runat="server" Height="31px" ImageUrl="~/Images/icelogo.png" Width="41px" CssClass="auto-style1" />
+            <strong><span class="auto-style2">&nbsp;Blue Arctic Ice Cream&nbsp;&nbsp;&nbsp;&nbsp; </span></strong>&nbsp;<asp:Image ID="Image1" runat="server" Height="18px" ImageUrl="~/Images/call.png" Width="18px" CssClass="auto-style1" />
+            <span class="auto-style1">&nbsp;+91-8897654321&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <asp:Image ID="Image2" runat="server" Height="18px" ImageUrl="~/Images/email2.jpeg" Width="18px" />
+            </span>&nbsp;<a href="mailto:myicecream@gmail.com" class="auto-style1">myicecream@gmail.com</a>
+            <span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <span class="auto-style1">
+            
+            <asp:Image ID="Image6" runat="server" Height="18px" ImageUrl="~/Images/bluelocation.png" Width="18px" />
+            </span>&nbsp;Anand&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image4" runat="server" Height="18px" ImageUrl="~/Images/blueaccount.png" Width="18px" />
+            &nbsp;</span>
+            <asp:HyperLink runat="server" ID="HyperLink1" ViewStateMode="Disabled" ForeColor="Black" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+            <span class="auto-style1"><strong>&nbsp;|| </strong>
+            </span>
+            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled" ForeColor="Black" NavigateUrl="~/Signup.aspx">Sign-Up</asp:HyperLink>
+            <br />
+            <br />
+        </div>
+        <div>
+      
+            <asp:Menu ID="Menu1" runat="server" Font-Size="Large" Orientation="Horizontal" style="font-weight: 700; font-size: small;">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/orderonline.aspx" Text="Order Online" Value="Order Online"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/featuredstore.aspx" Text="Featured Stores" Value="Featured Stores"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/about.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Admin/Adminlogin.aspx" Text="Admin" Value="Admin"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/amenities.aspx" Text="Amenities" Value="Amenities"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/gallery.aspx" Text="Gallery" Value="Gallery"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/videos.aspx" Text="Videos" Value="Videos"></asp:MenuItem>
+                    <asp:MenuItem Text="Contact US" Value="Contact US" NavigateUrl="~/contactus.aspx"></asp:MenuItem>
+                </Items>
+                <StaticMenuItemStyle HorizontalPadding="10px" ForeColor="Black" />
+            </asp:Menu> 
+            &nbsp;</header>
+       
+        <div><hr style="color: #000000" /></div>
+       
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div><br /><br />
+        <footer>
+            <table class="auto-style4" >
+                <tr >
+                    <td align="left">
+                        <asp:Label ID="Label1" runat="server" Text="Useful Links" style="font-weight: 700" CssClass="auto-style5"></asp:Label><br class="auto-style5" />
+                         <asp:Menu ID="Menu2" runat="server" ForeColor="Black">
+                            <Items>
+                                <asp:MenuItem Text="Privacy Policy" Value="Privacy Policy"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/orderonline.aspx" Text="Order Online" Value="Order Online"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/about.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/gallery.aspx" Text="Gallery" Value="Gallery"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td class="auto-style3" align="left"><br class="auto-style5" />
+                        <asp:Menu ID="Menu3" runat="server" ForeColor="Black">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Privacy Policy" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/featuredstore.aspx" Text="Featured Stores" Value="Order Online"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/amenities.aspx" Text="Amenities" Value="About Us"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/videos.aspx" Text="Videos" Value="Gallery"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                    </td>
+                    <td style="color: #000000"><p></p><div>
+                        <strong>
+                        <asp:Label ID="Label2" runat="server" Text="Contact" CssClass="auto-style5"></asp:Label></strong></div>
+                         <span class="auto-style5">Royal Plaza Complex, 4th Floor,</span><br class="auto-style5" />
+                         <span class="auto-style5">100 Feet Road, Anand-388001. </span> <br class="auto-style5" />
+                        <span class="auto-style5">Anand, Gujarat, India. </span> <br class="auto-style5" /><br class="auto-style5" />
+                        <span class="auto-style5">+91-8897654321 </span> <br class="auto-style5" />
+                       <a href="myicecream@gmail.com"><span class="auto-style5">myicecream@gmail.com</span></a><span class="auto-style5"> </span> 
+                    </td>
+                </tr>
+            </table>
+             <p>&copy; <%: DateTime.Now.Year %> - Blue Arctic Ice Cream.</p>
+        </footer>
+        <p>
+            &nbsp;</p>
+    </form>
+</body>
+</html>

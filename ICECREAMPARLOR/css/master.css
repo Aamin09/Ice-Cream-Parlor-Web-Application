@@ -1,0 +1,128 @@
+﻿/* Define a class for horizontal spacing */
+.horizontal-spacing {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.auto-style1 {
+    width: 301px;
+}
+
+.auto-style2 {
+    width: 305px;
+}
+
+.auto-style3 {
+    width: 348px;
+}
+
+.auto-style4 {
+    width: 100%;
+}
+
+.auto-style5 {
+    font-size: medium;
+}
+
+.auto-style7 {
+    position: relative;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    top: -27px;
+    right: 0px;
+    bottom: 27px;
+    left: 0px;
+}
+
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif; /* Change the font family as per your preference */
+    margin: 0;
+    padding: 0;
+    background-color: #e0f6ff; /* Sky blue background */
+}
+
+.container {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #87ceeb; /* Sky blue background color */
+    color: #333; /* Dark text color */
+    padding: 20px;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+/* Footer Styles */
+
+footer {
+    background-color: #87ceeb; /* Sky blue background color */
+    color: #333; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Menu Styles */
+
+nav {
+    background-color: #add8e6; /* Light sky blue background color */
+    padding: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+            nav ul li a {
+                color: #333; /* Dark text color */
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+/* Content Area Styles */
+
+.content {
+    background-color: #ffffff; /* White background color */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Footer Links Styles */
+
+.footer-links {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+}
+
+    .footer-links:hover {
+        text-decoration: underline;
+    }
+
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
